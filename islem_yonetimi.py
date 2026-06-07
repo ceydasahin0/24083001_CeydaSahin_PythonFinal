@@ -2,7 +2,13 @@ from finans_modeli import Islem
 from utils import yeni_id_olustur, tarih_kontrol, sayi_kontrol
 
 
-def gelir_ekle(gelirler):
+def gelir_ekle(gelirler, giderler):
+    """Kullanıcıdan gelir bilgisi alır, doğrular ve gelir listesine ekler.
+
+    Args:
+        gelirler (list): Mevcut gelir `Islem` listesi.
+        giderler (list): Mevcut gider `Islem` listesi (ID benzersizliği için kullanılır).
+    """
     try:
         tutar = input("Gelir tutarı: ")
         if not sayi_kontrol(tutar):
@@ -13,7 +19,7 @@ def gelir_ekle(gelirler):
             print("Geçersiz tarih formatı")
             return
         aciklama = input("Açıklama: ")
-        yeni_id = yeni_id_olustur(gelirler)
+        yeni_id = yeni_id_olustur(gelirler + giderler)
         islem = Islem(id=yeni_id, tutar=float(tutar), tarih=tarih, aciklama=aciklama, tip="gelir")
         gelirler.append(islem)
         print("Gelir eklendi.")
@@ -21,7 +27,13 @@ def gelir_ekle(gelirler):
         print("Hata eklerken:", e)
 
 
-def gider_ekle(giderler):
+def gider_ekle(gelirler, giderler):
+    """Kullanıcıdan gider bilgisi alır, doğrular ve gider listesine ekler.
+
+    Args:
+        gelirler (list): Mevcut gelir `Islem` listesi (ID benzersizliği için kullanılır).
+        giderler (list): Mevcut gider `Islem` listesi.
+    """
     try:
         tutar = input("Gider tutarı: ")
         if not sayi_kontrol(tutar):
@@ -32,7 +44,7 @@ def gider_ekle(giderler):
             print("Geçersiz tarih formatı")
             return
         aciklama = input("Açıklama: ")
-        yeni_id = yeni_id_olustur(giderler)
+        yeni_id = yeni_id_olustur(gelirler + giderler)
         islem = Islem(id=yeni_id, tutar=float(tutar), tarih=tarih, aciklama=aciklama, tip="gider")
         giderler.append(islem)
         print("Gider eklendi.")

@@ -13,9 +13,9 @@ def main():
         menu_goster()
         choice = input("Seçiminiz: ")
         if choice == '1':
-            gelir_ekle(gelirler)
+            gelir_ekle(gelirler, giderler)
         elif choice == '2':
-            gider_ekle(giderler)
+            gider_ekle(gelirler, giderler)
         elif choice == '3':
             islemleri_listele(gelirler, giderler)
         elif choice == '4':
