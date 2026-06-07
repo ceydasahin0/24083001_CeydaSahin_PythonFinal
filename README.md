@@ -41,3 +41,7 @@ pytest -q
 Teslim için:
 - `main.ipynb` veya `.py` dosyalarınız ve `README.md` ile birlikte proje klasörünü `zip`leyin.
 - GitHub repo: özel (private) olarak oluşturun, en az 4 commit yapın ve öğretim elemanını collaborator olarak ekleyin.
+ 
+Student: Ceyda Sahin
+Student ID: 24083001
+Course: BGY210 - Python Programlama II
