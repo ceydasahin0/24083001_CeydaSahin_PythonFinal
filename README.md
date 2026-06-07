@@ -1,49 +1,54 @@
-# 24083001_CeydaSahin_PythonFinal
+# 24083001_CeydaSahin_PythonFinal 
 
-Python ile Programlama-2 Dersi Final Ödevi - Kişisel Finans ve Harcama Takip Sistemi
+24083001 - Ceyda Şahin - Bilgi Güvenliği Teknolojisi 
 
-Bu proje Python ile kişisel finans takibi için basit, modüler bir uygulama içerir.
+ 
 
-Dosyalar:
-- `finans_modeli.py`: `Islem` sınıfı
-- `utils.py`: Yardımcı kontroller ve `menu_goster`
-- `islem_yonetimi.py`: Gelir/gider ekleme, listeleme, silme
-- `dosya_islemleri.py`: CSV okuma/yazma
-- `analiz.py`: Pandas & NumPy analizleri
-- `gorsellestirme.py`: Matplotlib grafik fonksiyonları
-- `main.py`: Basit konsol arayüzü
+Python ile Programlama-2 Dersi Final Ödevi - Kişisel Finans ve Harcama Takip Sistemi 
 
-Çalıştırma:
+ 
 
-1. Gerekli paketleri yükleyin:
+Kişisel Finans ve Harcama Takip Sistemi — Gelir/gider kaydı, CSV ile kalıcı saklama, Pandas/NumPy analizleri ve Matplotlib görselleştirmeleri sunan modüler bir Python uygulamasıdır. 
 
-```bash
-pip install -r requirements.txt
-```
+ 
 
-2. Konsol uygulamasını başlatın:
+Görsel çıktılar  
+ 
+1 - Gelir Ekleme  
+<img width="355" height="313" alt="Ekran görüntüsü 2026-06-07 232416" src="https://github.com/user-attachments/assets/2786c974-aba2-4aa8-be47-24bd36daaf12" />
 
-```bash
-python main.py
-```
+ 
 
-3. Demo (otomatik, interaktif olmayan) çalıştırma ve çıktı üretme:
+2 - Gider Ekleme 
 
-```bash
-python demo.py
-```
+  
 
-4. Testler (pytest):
+3 - Listeleme  
 
-```bash
-pip install pytest
-pytest -q
-```
+ 
 
-Teslim için:
-- `main.ipynb` veya `.py` dosyalarınız ve `README.md` ile birlikte proje klasörünü `zip`leyin.
-- GitHub repo: özel (private) olarak oluşturun, en az 4 commit yapın ve öğretim elemanını collaborator olarak ekleyin.
+4 - Analiz Yapmak  
 
-Student: Ceyda Sahin
-Student ID: 24083001
-Course: BGY210 - Python Programlama II
+ 
+
+5 - 1 Aylık Grafik 
+
+ 
+
+5 - 2 Bar Grafik  
+
+ 
+
+5 - 3 Pasta Grafik  
+
+ 
+
+6 - CVS Kaydetmek 
+
+ 
+
+7 - CVS Okumak  
+
+ 
+
+8 - Programdan Çıkış Yapmak  
